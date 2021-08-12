@@ -1,0 +1,34 @@
+{
+	"bitstreamId": "vector",
+	"version": "1",
+	"description": "https://github.com/inaccel/vadd",
+	"kernels": [
+		{
+			"name": [
+				"vadd"
+			],
+			"kernelId": "addition",
+			"arguments": [
+				{
+					"type": "float*",
+					"name": "a",
+					"access": "r"
+				},
+				{
+					"type": "float*",
+					"name": "b",
+					"access": "r"
+				},
+				{
+					"type": "float*",
+					"name": "c",
+					"access": "w"
+				},
+				{
+					"type": "int",
+					"name": "size"
+				}
+			]
+		}
+	]
+}
