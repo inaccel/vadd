@@ -1,0 +1,4 @@
+Name: vadd
+Version: 1
+Description: vector.addition
+URL: https://github.com/inaccel/vadd
