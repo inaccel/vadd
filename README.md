@@ -75,6 +75,7 @@
 
 ```sh
 docker-compose --file deploy/docker-compose.yml run inaccel-vadd
+docker-compose --file deploy/docker-compose.yml down --volumes
 ```
 
 ### Kubernetes
