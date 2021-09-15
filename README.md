@@ -4,9 +4,7 @@
 
 * *38d782e3b6125343b9342433e348ac4c*
 > ```sh
-> export VENDOR=intel
-> export NAME=pac_a10
-> export VERSION=38d782e3b6125343b9342433e348ac4c
+> export PLATFORM=intel/pac_a10/38d782e3b6125343b9342433e348ac4c
 > ```
 </p></details>
 
@@ -14,10 +12,7 @@
 
 * **AWS** | *shell-v04261818_201920.2*
 > ```sh
-> export VENDOR=xilinx
-> export NAME=aws-vu9p-f1
-> export VERSION=shell-v04261818_201920.2
-> export LABELS=aws
+> export PLATFORM=xilinx/aws-vu9p-f1/shell-v04261818_201920.2/aws
 > ```
 </p></details>
 
@@ -25,9 +20,7 @@
 
 * *xdma_201830.2*
 > ```sh
-> export VENDOR=xilinx
-> export NAME=u200
-> export VERSION=xdma_201830.2
+> export PLATFORM=xilinx/u200/xdma_201830.2
 > ```
 </p></details>
 
@@ -35,17 +28,12 @@
 
 * **Azure** | *gen3x16_xdma_shell_2.1*
 > ```sh
-> export VENDOR=xilinx
-> export NAME=u250
-> export VERSION=gen3x16_xdma_shell_2.1
-> export LABELS=azure
+> export PLATFORM=xilinx/u250/gen3x16_xdma_shell_2.1/azure
 > ```
 
 * *xdma_201830.2*
 > ```sh
-> export VENDOR=xilinx
-> export NAME=u250
-> export VERSION=xdma_201830.2
+> export PLATFORM=xilinx/u250/xdma_201830.2
 > ```
 </p></details>
 
@@ -53,9 +41,7 @@
 
 * *xdma_201920.3*
 > ```sh
-> export VENDOR=xilinx
-> export NAME=u280
-> export VERSION=xdma_201920.3
+> export PLATFORM=xilinx/u280/xdma_201920.3
 > ```
 </p></details>
 
@@ -63,9 +49,7 @@
 
 * *gen3x16_xdma_201920.3*
 > ```sh
-> export VENDOR=xilinx
-> export NAME=u50
-> export VERSION=gen3x16_xdma_201920.3
+> export PLATFORM=xilinx/u50/gen3x16_xdma_201920.3
 > ```
 </p></details>
 
@@ -74,14 +58,16 @@
 ### Docker
 
 ```sh
-docker-compose --file deploy/docker-compose.yml run inaccel-vadd
-docker-compose --file deploy/docker-compose.yml down --volumes
+wget https://vadd.inaccel.com/${PLATFORM}/docker-compose.yml
+docker-compose run inaccel-vadd
+docker-compose down --volumes
+rm docker-compose.yml
 ```
 
 ### Kubernetes
 
 ```sh
-envsubst < deploy/pod.yaml | kubectl create --filename -
+kubectl create --filename https://vadd.inaccel.com/${PLATFORM}/pod.yaml
 kubectl wait --for condition=ready --timeout -1s pod/inaccel-vadd
 kubectl logs --follow pod/inaccel-vadd
 kubectl delete pod/inaccel-vadd
