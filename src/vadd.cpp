@@ -24,4 +24,6 @@ int main() {
 	assert(c == c_golden);
 
 	std::cout << "Test PASSED" << std::endl;
+
+	std::this_thread::sleep_for(std::chrono::seconds(3));
 }
