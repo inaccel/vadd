@@ -16,4 +16,4 @@ spec:
         ${VENDOR}/${NAME}: 1
   nodeSelector:
     ${VENDOR}/${NAME}: ${VERSION}
-  restartPolicy: OnFailure
+  restartPolicy: Never
