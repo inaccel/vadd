@@ -10,9 +10,9 @@
 
 <details><summary>Xilinx AWS VU9P F1</summary><p>
 
-* **AWS** | *shell-v04261818_201920.2*
+* **AWS** | *dynamic-shell*
 > ```sh
-> export PLATFORM=xilinx/aws-vu9p-f1/shell-v04261818_201920.2/aws
+> export PLATFORM=xilinx/aws-vu9p-f1/dynamic-shell/aws
 > ```
 </p></details>
 
