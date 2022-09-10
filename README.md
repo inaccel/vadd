@@ -8,6 +8,14 @@
 > ```
 </p></details>
 
+<details><summary>Intel PAC S10 DC</summary><p>
+
+* *9346116da52d5ca8b06aa9a389ef7c8d*
+> ```sh
+> export PLATFORM=intel/pac_s10_dc/9346116da52d5ca8b06aa9a389ef7c8d
+> ```
+</p></details>
+
 <details><summary>Xilinx AWS VU9P F1</summary><p>
 
 * **AWS** | *dynamic-shell*
