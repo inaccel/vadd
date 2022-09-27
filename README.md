@@ -67,7 +67,7 @@
 
 ```sh
 wget https://vadd.inaccel.com/${PLATFORM}/docker-compose.yml
-docker compose run inaccel-vadd
+docker compose run --rm inaccel-vadd
 docker compose down --volumes
 rm docker-compose.yml
 ```
