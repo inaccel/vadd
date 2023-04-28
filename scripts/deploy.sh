@@ -7,6 +7,7 @@ platforms=(
 	xilinx/u200/xdma_201830.2
 	xilinx/u250/gen3x16_xdma_shell_2.1/azure
 	xilinx/u250/xdma_201830.2
+	xilinx/u280/gen3x16_xdma_base.1
 	xilinx/u280/xdma_201920.3
 	xilinx/u50/gen3x16_xdma_201920.3
 )

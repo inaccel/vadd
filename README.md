@@ -47,6 +47,11 @@
 
 <details><summary>Xilinx U280</summary><p>
 
+* *gen3x16_xdma_base.1*
+> ```sh
+> export PLATFORM=xilinx/u280/gen3x16_xdma_base.1
+> ```
+
 * *xdma_201920.3*
 > ```sh
 > export PLATFORM=xilinx/u280/xdma_201920.3
