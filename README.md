@@ -1,5 +1,21 @@
 ## Supported platforms
 
+<details><summary>Intel OFS IA420FR0</summary><p>
+
+* *06dd1e32478657c38c353dc048cdb7e0*
+> ```sh
+> export PLATFORM=intel/ofs_ia420fr0/06dd1e32478657c38c353dc048cdb7e0
+> ```
+</p></details>
+
+<details><summary>Intel OFS IA840FR0</summary><p>
+
+* *18f573d96298516d891fc9b6261e3a73*
+> ```sh
+> export PLATFORM=intel/ofs_ia840fr0/18f573d96298516d891fc9b6261e3a73
+> ```
+</p></details>
+
 <details><summary>Intel PAC A10</summary><p>
 
 * *38d782e3b6125343b9342433e348ac4c*
