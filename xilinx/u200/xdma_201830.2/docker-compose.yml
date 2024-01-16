@@ -1,0 +1,19 @@
+services:
+  inaccel-vadd:
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    image: inaccel/vadd
+    volumes:
+    - volume:/var/lib/inaccel
+  init:
+    command:
+    - bitstream
+    - install
+    - https://store.inaccel.com/artifactory/bitstreams/xilinx/u200/xdma_201830.2//vector/1/1addition
+    image: inaccel/cli
+    volumes:
+    - volume:/var/lib/inaccel
+volumes:
+  volume:
+    driver: inaccel

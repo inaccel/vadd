@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    inaccel/cli: |
+      bitstream install https://store.inaccel.com/artifactory/bitstreams/intel/ofs_ia840fr0/18f573d96298516d891fc9b6261e3a73//vector/1/1addition
+  labels:
+    inaccel/fpga: enabled
+  name: inaccel-vadd
+spec:
+  containers:
+  - image: inaccel/vadd
+    name: inaccel-vadd
+    resources:
+      limits:
+        intel/ofs_ia840fr0: 1
+  nodeSelector:
+    intel/ofs_ia840fr0: 18f573d96298516d891fc9b6261e3a73
+  restartPolicy: Never
