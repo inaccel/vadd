@@ -1,6 +1,6 @@
 ## Supported platforms
 
-<details><summary>Intel OFS IA420FR0</summary><p>
+<details><summary>Intel OFS IA-420F/R0</summary><p>
 
 * *06dd1e32478657c38c353dc048cdb7e0*
 > ```sh
@@ -8,7 +8,7 @@
 > ```
 </p></details>
 
-<details><summary>Intel OFS IA840FR0</summary><p>
+<details><summary>Intel OFS IA-840F/R0</summary><p>
 
 * *18f573d96298516d891fc9b6261e3a73*
 > ```sh
